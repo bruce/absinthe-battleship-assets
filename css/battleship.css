@@ -141,7 +141,7 @@ body {
   position: absolute;
   top: 152px;
   left: 470px;
-  background-image: url("/images/san_antonio.png");
+  background-image: url("../images/san_antonio.png");
   background-repeat: no-repeat;
   background-size: contain;
   background-position: 0 28px;
