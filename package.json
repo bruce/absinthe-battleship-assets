@@ -4,5 +4,8 @@
   "main": "index.js",
   "repository": "git@github.com:bruce/absinthe-battleship-assets.git",
   "author": "<brwcodes@gmail.com>",
-  "license": "MIT"
+  "license": "MIT",
+  "dependencies": {
+    "normalize.css": "^7.0.0"
+  }
 }

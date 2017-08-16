@@ -2,10 +2,6 @@ body {
   font-family: "-apple-system" , "BlinkMacSystemFont", "Segoe UI", "Roboto" , "Helvetica", "Arial", "sans-serif";
 }
 
-#frame {
-  margin: auto;
-}
-
 #game {
   position: relative;
   margin: 40px;
@@ -15,42 +11,6 @@ body {
   position: absolute;
   border-collapse: collapse;
 }
-
-
-.ledger {
-  position: absolute;
-}
-.ledger h1 {
-  text-transform: uppercase;
-  font-weight: 400;
-  letter-spacing: 3px;
-  color: slategray;
-}
-.ledger ul {
-  list-style: none;
-  margin: 0;
-  padding: 0;
-}
-.ledger li {
-  padding: 2px 0;
-}
-.ledger li.damaged {
-  color: orangered;
-}
-
-.ledger.own {
-  top: 20px;
-  left: 380px;
-}
-
-.ledger.enemy {
-  top: 280px;
-  left: 0;
-}
-.ledger.enemy li {
-  text-align: right;
-}
-
 
 .board th {
   font-weight: normal;
@@ -134,7 +94,6 @@ body {
   background: radial-gradient(at top left, white, darkgray);
 }
 
-
 #ship_decoration {
   width: 220px;
   height: 72px;
@@ -146,4 +105,42 @@ body {
   background-size: contain;
   background-position: 0 28px;
   opacity: 0.2;
+}
+
+
+/* LEDGER */
+
+.ledger {
+  position: absolute;
+}
+.ledger h1 {
+  text-transform: uppercase;
+  font-weight: 600;
+  letter-spacing: 3px;
+  color: slategray;
+  font-size: 18px;
+}
+.ledger ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ledger li {
+  padding: 2px 0;
+}
+.ledger li.damaged {
+  color: orangered;
+}
+
+.ledger.own {
+  top: 20px;
+  left: 380px;
+}
+
+.ledger.enemy {
+  top: 280px;
+  left: 0;
+}
+.ledger.enemy li {
+  text-align: right;
 }
