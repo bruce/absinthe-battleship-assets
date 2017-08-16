@@ -1,0 +1,149 @@
+body {
+  font-family: "-apple-system" , "BlinkMacSystemFont", "Segoe UI", "Roboto" , "Helvetica", "Arial", "sans-serif";
+}
+
+#frame {
+  margin: auto;
+}
+
+#game {
+  position: relative;
+  margin: 40px;
+}
+
+.board {
+  position: absolute;
+  border-collapse: collapse;
+}
+
+
+.ledger {
+  position: absolute;
+}
+.ledger h1 {
+  text-transform: uppercase;
+  font-weight: 400;
+  letter-spacing: 3px;
+  color: slategray;
+}
+.ledger ul {
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+.ledger li {
+  padding: 2px 0;
+}
+.ledger li.damaged {
+  color: orangered;
+}
+
+.ledger.own {
+  top: 20px;
+  left: 380px;
+}
+
+.ledger.enemy {
+  top: 280px;
+  left: 0;
+}
+.ledger.enemy li {
+  text-align: right;
+}
+
+
+.board th {
+  font-weight: normal;
+  border: 1px solid silver;
+  color: dimgray;
+}
+.board thead th {
+  border-bottom: 2px #000 solid;
+}
+.board thead th:first-child {
+  border-top: none;
+  border-left: none;
+  border-bottom: 1px solid silver;
+}
+
+.board tbody th {
+  border-right: 2px #000 solid;
+}
+.board tbody td {
+  border-right: 1px solid silver;
+  border-bottom: 1px solid silver;
+}
+.board tbody tr:last-child td {
+  border-bottom: 2px #000 solid;
+}
+.board tbody tr td:last-child {
+  border-right: 2px #000 solid;
+}
+
+
+/* OWN */
+.board.own {
+  top: 0;
+  left: 0;
+}
+.board.own th {
+  font-size: 16px;
+  width: 24px;
+  height: 24px;
+}
+.board.own td.ship {
+  background-color: lightslategray;
+}
+.board.own td div {
+  border-radius: 100%;
+  width: 15px;
+  height: 15px;
+  margin: auto;
+  box-shadow: 0 1px 1px slategray;
+}
+.board.own .hit {
+  background: radial-gradient(at top left, orangered, darkred);
+}
+
+/* ENEMY */
+.board.enemy {
+  top: 224px;
+  left: 254px;
+  z-index: -1;
+}
+.board.enemy th {
+  font-size: 22px;
+  width: 40px;
+  height: 40px;
+}
+.board.enemy td:hover {
+  cursor: pointer;
+  background: #e6e6e6;
+}
+.board.enemy td div {
+  border-radius: 100%;
+  width: 30px;
+  height: 30px;
+  margin: auto;
+  box-shadow: 0 2px 5px #000;
+}
+.board.enemy .hit {
+  background: radial-gradient(at top left, orangered, darkred);
+}
+.board.enemy .miss {
+  background: radial-gradient(at top left, white, darkgray);
+}
+
+
+#ship_decoration {
+  width: 220px;
+  height: 72px;
+  position: absolute;
+  top: 152px;
+  left: 470px;
+  background-image: url("/images/san_antonio.png");
+  background-repeat: no-repeat;
+  background-size: contain;
+  background-position: 0 28px;
+  opacity: 0.2;
+}
